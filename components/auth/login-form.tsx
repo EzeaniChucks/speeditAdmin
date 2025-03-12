@@ -51,7 +51,7 @@ export function LoginForm() {
 
       // Redirect to dashboard
       router.push("/dashboard")
-    } catch (error) {
+    } catch {
       toast({
         variant: "destructive",
         title: "Login failed",

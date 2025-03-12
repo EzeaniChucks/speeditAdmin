@@ -219,7 +219,7 @@ export function UsersTable({ userType }: { userType: "all" | UserRole }) {
       cell: ({ row }) => {
         const status = row.getValue("status") as string
         return (
-          <Badge variant={status === "active" ? "success" : status === "inactive" ? "outline" : "destructive"}>
+          <Badge variant={status === "active" ? "default" : status === "inactive" ? "outline" : "destructive"}>
             {status.charAt(0).toUpperCase() + status.slice(1)}
           </Badge>
         )

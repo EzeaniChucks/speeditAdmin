@@ -1,7 +1,7 @@
-"use client"
+"use client";
 
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Button } from "@/components/ui/button";
 
 export function HelpCenter() {
   return (
@@ -24,11 +24,10 @@ export function HelpCenter() {
           <CardTitle>Contact Support</CardTitle>
         </CardHeader>
         <CardContent>
-          <p>If you can't find the answer you're looking for, our support team is here to help.</p>
+          <p>{`If you can't find the answer you're looking for, our support team is here to help.`}</p>
           <Button className="mt-4">Contact Support</Button>
         </CardContent>
       </Card>
     </div>
-  )
+  );
 }
-

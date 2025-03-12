@@ -43,7 +43,7 @@ export function ForgotPasswordForm() {
         title: "Reset link sent",
         description: "Check your email for a password reset link.",
       })
-    } catch (error) {
+    } catch {
       toast({
         variant: "destructive",
         title: "Something went wrong",
@@ -74,7 +74,7 @@ export function ForgotPasswordForm() {
           </svg>
         </div>
         <h3 className="text-lg font-semibold">Check your email</h3>
-        <p className="text-sm text-muted-foreground">We've sent a password reset link to your email address.</p>
+        <p className="text-sm text-muted-foreground">{`We've sent a password reset link to your email address.`}</p>
         <Button variant="outline" onClick={() => setIsSubmitted(false)} className="mt-4">
           Back to reset form
         </Button>

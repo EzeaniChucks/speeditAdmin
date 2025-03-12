@@ -229,7 +229,7 @@ export function RestaurantsTable({ status }: { status: "all" | RestaurantStatus 
       cell: ({ row }) => {
         const status = row.getValue("status") as string
         return (
-          <Badge variant={status === "active" ? "success" : status === "pending" ? "secondary" : "outline"}>
+          <Badge variant={status === "active" ? "default" : status === "pending" ? "secondary" : "outline"}>
             {status.charAt(0).toUpperCase() + status.slice(1)}
           </Badge>
         )
