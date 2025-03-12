@@ -121,8 +121,9 @@ export default function DashboardLayout({
   ]
 
   return (
-    <SidebarProvider className="border border-appDarkBlue">
-      <div className="flex min-h-screen w-screen border border-appDarkBlue">
+    <SidebarProvider className="">
+      <div className="flex min-h-screen w-screen">
+        {/* side bar */}
         <Sidebar className="border border-appDarkBlue">
           <SidebarHeader className="flex h-14 items-center px-6 bg-appDarkBlue text-white">
             <div className="flex items-center gap-2 font-semibold">
@@ -174,6 +175,8 @@ export default function DashboardLayout({
             </SidebarMenu>
           </SidebarFooter>
         </Sidebar>
+        
+        {/* Main Content */}
         <div className="flex flex-1 flex-col ">
           <header className="sticky top-0 z-10 flex h-14 items-center gap-4 border bg-background px-4 sm:px-6">
             <SidebarTrigger />
