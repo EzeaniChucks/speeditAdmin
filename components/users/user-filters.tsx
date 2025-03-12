@@ -17,8 +17,8 @@ export function UserFilters() {
   const [statusFilter, setStatusFilter] = useState<string[]>([])
 
   return (
-    <div className="flex items-center gap-2">
-      <div className="relative w-64">
+    <div className="flex flex-wrap items-center gap-2">
+      <div className="relative w-full sm:w-64">
         <Search className="absolute left-2 top-2.5 h-4 w-4 text-muted-foreground" />
         <Input placeholder="Search users..." className="pl-8" />
       </div>
@@ -73,4 +73,3 @@ export function UserFilters() {
     </div>
   )
 }
-

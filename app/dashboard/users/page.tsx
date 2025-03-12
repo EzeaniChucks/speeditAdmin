@@ -25,8 +25,8 @@ export default function UsersPage() {
       </div>
 
       <Tabs defaultValue="all" className="w-full">
-        <div className="flex items-center justify-between">
-          <TabsList>
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-2">
+          <TabsList className="w-full sm:w-auto">
             <TabsTrigger value="all">All Users</TabsTrigger>
             <TabsTrigger value="customers">Customers</TabsTrigger>
             <TabsTrigger value="delivery">Delivery Personnel</TabsTrigger>
@@ -54,4 +54,3 @@ export default function UsersPage() {
     </div>
   )
 }
-

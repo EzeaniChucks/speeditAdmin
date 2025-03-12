@@ -127,23 +127,6 @@ export default function DashboardLayout({
         <Sidebar className="border border-appDarkBlue">
           <SidebarHeader className="flex h-14 items-center px-6 bg-appDarkBlue text-white">
             <div className="flex items-center gap-2 font-semibold">
-              {/* <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 24 24"
-                fill="none"
-                stroke="currentColor"
-                strokeWidth="2"
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                className="h-6 w-6"
-              >
-                <path d="M15.5 12a3.5 3.5 0 1 1-7 0 3.5 3.5 0 0 1 7 0Z" />
-                <path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20Z" />
-                <path d="M12 8v1" />
-                <path d="M12 15v1" />
-                <path d="M16 12h-1" />
-                <path d="M9 12H8" />
-              </svg> */}
               <span className="text-lg">Speedit Admin</span>
             </div>
           </SidebarHeader>
@@ -178,7 +161,7 @@ export default function DashboardLayout({
         
         {/* Main Content */}
         <div className="flex flex-1 flex-col ">
-          <header className="sticky top-0 z-10 flex h-14 items-center gap-4 border bg-background px-4 sm:px-6">
+          <header className="sticky top-0 flex h-14 items-center gap-4 border bg-background px-4 sm:px-6">
             <SidebarTrigger />
             <div className="flex-1" />
             <div className="flex items-center gap-2">
