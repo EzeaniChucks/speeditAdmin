@@ -121,10 +121,10 @@ export default function DashboardLayout({
   ]
 
   return (
-    <SidebarProvider>
-      <div className="flex min-h-screen w-screen">
-        <Sidebar className="border-r border-appDarkBlue">
-          <SidebarHeader className="flex h-14 items-center border border-blue-900 px-6 bg-appDarkBlue text-white">
+    <SidebarProvider className="border border-appDarkBlue">
+      <div className="flex min-h-screen w-screen border border-appDarkBlue">
+        <Sidebar className="border border-appDarkBlue">
+          <SidebarHeader className="flex h-14 items-center px-6 bg-appDarkBlue text-white">
             <div className="flex items-center gap-2 font-semibold">
               {/* <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -161,7 +161,7 @@ export default function DashboardLayout({
             </SidebarMenu>
           </SidebarContent>
           <SidebarSeparator />
-          <SidebarFooter>
+          <SidebarFooter className="bg-appDarkBlue text-white p-5">
             <SidebarMenu>
               <SidebarMenuItem>
                 <SidebarMenuButton asChild tooltip="Logout">
@@ -175,7 +175,7 @@ export default function DashboardLayout({
           </SidebarFooter>
         </Sidebar>
         <div className="flex flex-1 flex-col ">
-          <header className="sticky top-0 z-10 flex h-14 items-center gap-4 border-b bg-background px-4 sm:px-6">
+          <header className="sticky top-0 z-10 flex h-14 items-center gap-4 border bg-background px-4 sm:px-6">
             <SidebarTrigger />
             <div className="flex-1" />
             <div className="flex items-center gap-2">
